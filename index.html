@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="download.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(steven.gif);
+            width: 100%;
+            color: white;
+            background-repeat: no-repeat;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+        table{
+            position: absolute;
+            bottom: 500px;
+            left: 650px;
+            border: none;
+            
+        }
+        #enviar{
+            position: absolute;
+            bottom: 450px;
+            left: 650px;
+            border-radius: 5px;
+        }
+        #resetar{
+            position: absolute;
+            bottom: 450px;
+            left: 750px;
+            border-radius: 5px;
+        }
+        div{
+            position: absolute;
+            bottom: 400px;
+            left: 650px;
+        }
+        .GENERO{
+            position: absolute;
+            bottom: 350px;
+            left: 650px;
+            border-radius: 5px;
+        }
+        .mensa{
+            position: absolute;
+            bottom: 200px;
+            left: 650px;
+        }
+        .curso{
+            position: absolute;
+            bottom: 400px;
+            left: 860px;
+        }
+        .arquivo{
+            position: absolute;
+            bottom: 150px;
+            left: 650px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de contato</h1><br><br>
+
+    <form action="" name="form">
+
+        <table cols="2" rows="10" border="0">
+        <tr>
+            <td><label>nome:</label></td>
+            <td><input type="text" id="nome" size="30px"><br><br></td>
+        </tr>
+            <tr>
+                <td><label>senha:</label></td>
+                <td><input type="password" id="pass" size="30px"><br><br></td>
+            </tr>
+            <tr>
+                <td><label>email:</label></td>
+                <td><input type="email" id="email" size ="30px" required> <br><br></td>
+            </tr>
+            <tr>
+                <td><label>telefone</label></td>
+                 <td><input type="tel" id="tel" size="30px"><br><br></td>
+            </tr>
+            
+
+            <tr>
+                <input type="submit" value="enviar" id="enviar">
+                <input type="reset" value="limpar" id="resetar" size="5px">
+            </tr>
+
+            <div>
+                <input type="checkbox" id="um">html
+                <input type="checkbox" id="dois">css
+                <input type="checkbox" id="tres">javascript
+            </div>
+            
+
+            <DIV class="GENERO">
+                <input type="radio" id="sexo1">feminino
+                <input type="radio" id="sexo2">masculino
+                
+            </DIV>
+            <!--area de texto-->
+            <DIV class="mensa">
+                <label >mensagen</label>
+                <textarea cols="" rows="5">
+                       digite sua mensagem
+                   </textarea>
+            </DIV>
+            <div class="curso">
+                <label>Escolha seu curso</label><br>
+                <select id="curso">
+                    <option>html</option>
+                    <option>css</option>
+                    <option>javascript</option>
+                </select>
+            </div>
+            
+            <div class="arquivo">
+                <label>enviar seu arquivo</label>
+                <input type="file" id="upload">
+            </div>
+        </table>
+
+    </form>
+</body>
+
+</html>
